@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/energiedata/static/css/main.74ffd313.css",
+    "main.js": "/energiedata/static/js/main.d98c1ae8.js",
+    "static/media/TTNormsPro-Italic.ttf": "/energiedata/static/media/TTNormsPro-Italic.3cd202fd72e06ba1c36a.ttf",
+    "static/media/TTNormsPro-BoldItalic.ttf": "/energiedata/static/media/TTNormsPro-BoldItalic.59f101d40ddcef7c854f.ttf",
+    "static/media/TTNormsPro-Regular.ttf": "/energiedata/static/media/TTNormsPro-Regular.286accc215acf65c8da8.ttf",
+    "static/media/TTNormsPro-Bold.ttf": "/energiedata/static/media/TTNormsPro-Bold.ca1a7eb9f72ef0dcfd46.ttf",
+    "static/media/TTNormsPro-Black.ttf": "/energiedata/static/media/TTNormsPro-Black.42b0c49da7d469df5fef.ttf",
+    "index.html": "/energiedata/index.html",
+    "main.74ffd313.css.map": "/energiedata/static/css/main.74ffd313.css.map",
+    "main.d98c1ae8.js.map": "/energiedata/static/js/main.d98c1ae8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74ffd313.css",
+    "static/js/main.d98c1ae8.js"
+  ]
+}
