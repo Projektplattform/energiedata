@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/x-data-grid": "latest",
+    "@mui/x-data-grid-generator": "latest",
+    "@mui/x-data-grid-pro": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "description": "https://github.com/mui/mui-x/blob/v5.14.0/docs/data/data-grid/filtering/BasicExampleDataGrid.js",
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "name": "energiedatagrid"
+}

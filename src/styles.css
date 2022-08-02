@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local('TTNormsPro'), url(./fonts/TTNormsPro-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNormsPro-Italic';
+  src: local('TTNormsPro-Italic'), url(./fonts/TTNormsPro-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro-Bold';
+  src: local('TTNormsPro-Bold'), url(./fonts/TTNormsPro-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNormsPro-BoldItalic';
+  src: local('TTNormsPro-BoldItalic'), url(./fonts/TTNormsPro-BoldItalic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro-Black'; 
+  src:  local('TTNormsPro-Black'), url(./fonts/TTNormsPro-Black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  font-family: Arial, 'TTNormsPro-Black', 'TTNormsPro-Italic', 'TTNormsPro-Bold', 'TTNormsPro-BoldItalic', 'TTNormsPro-Black';
+}
+
+.App {
+  text-align: center;
+  text-decoration-color: #000771;
+  font-family: 'TTNormsPro', 'TTNormsPro-Black', 'TTNormsPro-Italic', 'TTNormsPro-Bold', 'TTNormsPro-BoldItalic', 'TTNormsPro-Black';
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+
+.treemap {
+  font-family: 'TTNormsPro';
+  text-align: center;
+  height: 500px;
+}
+
+.sunburst {
+  font-family: 'TTNormsPro';
+  text-align: center;
+  height: 750px;
+}
+
+.sankey {
+  font-family: 'TTNormsPro';
+  text-align: center;
+  height: 1000px;
+}
