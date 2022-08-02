@@ -8,7 +8,7 @@ import "./styles.css";
 
 const columns = [
   //{ field: 'unternehmen', headerName: 'Unternehmen', width: 260 },
-  { field: 'unternehmen', headerName: 'Unternehmen', renderCell: (params) => <a href="{params.row.web}">{params.row.unternehmen}</a>, width: 260, },
+  { field: 'unternehmen', headerName: 'Unternehmen', renderCell: (params) => <a href={params.row.web}>{params.row.unternehmen}</a>, width: 260, },
   { field: 'land', headerName: 'Land', width: 50 },
   { field: 'plz', headerName: 'PLZ', width: 80 },
   { field: 'standort', headerName: 'Standort', width: 100 },
@@ -30,7 +30,7 @@ const columns = [
   { field: 'fassade', headerName: 'Fassadentech.', type: 'boolean', width: 110 },
   { field: 'brandschutz', headerName: 'Brandschutz', type: 'boolean', width: 110 },
   //{ field: 'ansprechperson', headerName: 'Kontakt', width: 140 },
-  { field: 'email', headerName: 'Kontakt', renderCell: (params) => <a href="{params.row.email}">{params.row.ansprechperson}</a>, width: 175 },
+  { field: 'email', headerName: 'Kontakt', renderCell: (params) => <a href={params.row.email}>{params.row.ansprechperson}</a>, width: 175 },
   //{ field: 'email', headerName: 'E-Mail', renderCell: (params) => <a href="{params.row.email}">{params.row.email}</a>, width: 230 },
 ];
 
