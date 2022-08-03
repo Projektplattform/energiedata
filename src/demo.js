@@ -27,10 +27,12 @@ const columns = [
   { field: 'akustik', headerName: 'Akustik', type: 'boolean', width: 65 },
   { field: 'tga', headerName: 'TGA', type: 'boolean', width: 55 },
   { field: 'sanierung', headerName: 'Sanierung', type: 'boolean', width: 90 },
-  { field: 'fassade', headerName: 'Fassadentech.', type: 'boolean', width: 110 },
-  { field: 'brandschutz', headerName: 'Brandschutz', type: 'boolean', width: 110 },
+  { field: 'fassade', headerName: 'Fassaden', type: 'boolean', width: 90 },
+  { field: 'brandschutz', headerName: 'Brandschutz', type: 'boolean', width: 100 },
   //{ field: 'ansprechperson', headerName: 'Kontakt', width: 140 },
-  { field: 'email', headerName: 'Kontakt', renderCell: (params) => <a href={params.row.email}>{params.row.ansprechperson}</a>, width: 175 },
+  //{ field: 'email', headerName: 'Kontakt', renderCell: (params) => <a href={params.row.email}>{params.row.ansprechperson}</a>, width: 175 },
+  { field: 'email', headerName: 'Kontakt', renderCell: (params) => <a href={`mailto:${params.row.email}`}>{params.row.ansprechperson}</a>, width: 175 },
+
   //{ field: 'email', headerName: 'E-Mail', renderCell: (params) => <a href="{params.row.email}">{params.row.email}</a>, width: 230 },
 ];
 
