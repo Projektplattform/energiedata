@@ -89,6 +89,7 @@ const rowsPlanung = [
   { id: 150, unternehmen: 'Ingenieurbüro Trinius GmbH', land: 'D', plz: '22303', standort: 'Hamburg', web: "https://www.trinius.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Dr. Wolfram Trinius', email: 'trinius@trinius.de'},
   { id: 151, unternehmen: 'Ecopenta', land: 'SP', plz: '08006', standort: 'Barcelona', web: "https://www.ecopenta.com/" , zertifizierung: true, lca: true, lcc: false, simulation: false, monitoring: true, energietechnik: true, clima: false, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Daniel Vilavedra', email: 'daniel.vilavedra@ecopenta.com'},
   { id: 152, unternehmen: 'gmp Architekten', land: 'D', plz: '22765', standort: 'Hamburg', web: "https://www.gmp.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Urs Wedekind', email: 'uwedekind@gmp.de'},
+  { id: 153, unternehmen: 'Essigplan', land: 'D', plz: '96049', standort: 'Bamberg', web: "https://www.essigplan.com/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: false, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Natalie Eßig', email: 'info@essigplan.com'},
   //{ id: 999, unternehmen: '99999', land: 'D', plz: '99999', standort: 'Stadt', web: "https://www.tum.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
 ];
 
@@ -104,12 +105,13 @@ const rowsSoftwareentwicklung = [
   { id: 305, unternehmen: 'v3sta', land: 'D', plz: '99999', standort: 'Stadt', web: "https://www.tum.de/" , zertifizierung: true, lca: true, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: true, umwelttechnik: true, bauphysik: true, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
 ];
 
+/*
 const rowsForschung = [
   { id: 401, unternehmen: 'C', land: 'D', plz: '60326', standort: 'Frankfurt', web: "https://www.dreso.com" , zertifizierung: true, energietechnik: true, lca: true, ansprechperson: 'Natascha Altensen', email: 'natascha.altensen@dreso.com'},
-
 ];
+*/
 
-const allArrays = [...rowsPlanung, ...rowsAusführung, ...rowsSoftwareentwicklung, ...rowsForschung];
+const allArrays = [...rowsPlanung, ...rowsAusführung, ...rowsSoftwareentwicklung];
 
 export default function EventTable() {
     const [pick, setPick] = React.useState('50');
@@ -125,9 +127,11 @@ export default function EventTable() {
       else if (event.target.value === 30) {
         setRows(rowsSoftwareentwicklung);
       }
+      /*
       else if (event.target.value === 40) {
         setRows(rowsForschung);
       }
+      */
       else {
         setRows(allArrays);
       }
@@ -149,7 +153,7 @@ export default function EventTable() {
           <MenuItem value={10}>Planung</MenuItem>
           <MenuItem value={20}>Ausführung</MenuItem>
           <MenuItem value={30}>Softwareentwicklung</MenuItem>
-          <MenuItem value={40}>Forschung</MenuItem>
+          
         </Select>
       </FormControl>
     </div>
