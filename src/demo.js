@@ -185,7 +185,7 @@ export default function EventTable() {
           <MenuItem value={20}>Ausführung</MenuItem>
           <MenuItem value={30}>Softwareentwicklung</MenuItem>
           <MenuItem value={40}>Contracting Berater</MenuItem>
-          <MenuItem value={60}>Energie-Contractor</MenuItem>
+          <MenuItem value={50}>Energie-Contractor</MenuItem>
         </Select>
       </FormControl>
     </div>
