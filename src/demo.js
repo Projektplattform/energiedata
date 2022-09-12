@@ -98,11 +98,30 @@ const rowsAusfuhrung = [
 ];
 
 const rowsSoftwareentwicklung = [
-  { id: 301, unternehmen: 'EPEA (DreSo)', land: 'D', plz: '70569', standort: 'Stuttgart', web: "https://epea.com/ " , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: false, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Christian Luft', email: 'christian.luft@dreso.com'},
-  { id: 302, unternehmen: 'Concular GmbH', land: 'D', plz: '70327', standort: 'Stuttgart', web: "https://concular.de/ " , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
-  { id: 303, unternehmen: 'Madaster', land: 'D', plz: '10717', standort: 'Berlin', web: "https://madaster.de/ " , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: false, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
-  { id: 304, unternehmen: 'CAALA', land: 'D', plz: '81543', standort: 'München', web: "https://www.caala.de/ " , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
+  { id: 301, unternehmen: 'EPEA (DreSo)', land: 'D', plz: '70569', standort: 'Stuttgart', web: "https://epea.com/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: false, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Christian Luft', email: 'christian.luft@dreso.com'},
+  { id: 302, unternehmen: 'Concular GmbH', land: 'D', plz: '70327', standort: 'Stuttgart', web: "https://concular.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
+  { id: 303, unternehmen: 'Madaster', land: 'D', plz: '10717', standort: 'Berlin', web: "https://madaster.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: false, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
+  { id: 304, unternehmen: 'CAALA', land: 'D', plz: '81543', standort: 'München', web: "https://www.caala.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
   { id: 305, unternehmen: 'v3sta', land: 'D', plz: '99999', standort: 'Stadt', web: "https://www.tum.de/" , zertifizierung: true, lca: true, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: true, umwelttechnik: true, bauphysik: true, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
+];
+
+const rowsBerater = [
+  { id: 401, unternehmen: 'Deutsche Energie-Agentur GmbH (dena)', land: 'D', plz: '10115', standort: 'Berlin', web: "https://www.dena.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Andreas Kuhlmann', email: 'info@dena.de'},
+  { id: 402, unternehmen: 'eta Energieberatung GmbH', land: 'D', plz: '85276', standort: 'Pfaffenhofen a.d. Ilm', web: "https://eta-energieberatung.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Thomas Friedl', email: 'info@eta-energieberatung.de'},
+  { id: 403, unternehmen: 'Berliner Energieagentur GmbH', land: 'D', plz: '10117', standort: 'Berlin', web: "https://www.berliner-e-agentur.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Michael Geißler', email: 'office@berliner-e-agentur.de'},
+  { id: 404, unternehmen: 'KEA GmbH', land: 'D', plz: '76133', standort: 'Karlsruhe', web: "https://www.kea-bw.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Rüdiger Lohse', email: 'Ruediger.Lohse@kea-bw.de'},
+  
+
+];
+
+const rowsContractor = [
+  
+  { id: 451, unternehmen: 'ENGIE Deutschland GmbH', land: 'D', plz: '50858', standort: 'Köln', web: "https://www.engie-deutschland.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: true, brandschutz: false, ansprechperson: 'Manfred Schmitz', email: 'info-deutschland@engie.com'},
+  { id: 452, unternehmen: 'Caverion Deutschland GmbH', land: 'D', plz: '80992', standort: 'München', web: "https://www.caverion.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: true, brandschutz: false, ansprechperson: 'Manfred Simmet', email: 'info.de@caverion.com'},
+  { id: 453, unternehmen: 'Siemens AG', land: 'D', plz: '60487', standort: 'Frankfurt am Main', web: "https://new.siemens.com/de/de/produkte/gebaeudetechnik.html" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'info', email: 'https://new.siemens.com/de/de/produkte/gebaeudetechnik/kontakt.html'},
+  { id: 454, unternehmen: 'SPIE Energy Solutions GmbH', land: 'D', plz: '10179', standort: 'Berlin', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Markus Holzke', email: 'https://spie.de/footer-dt/kontakt'},
+  { id: 455, unternehmen: 'MVV Energiedienstleistungen GmbH', land: 'D', plz: '68159', standort: 'Mannheim', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Sebastian Ackermann', email: 'sebastian.ackermann@mvv.de'},
+  
 ];
 
 /*
@@ -111,7 +130,7 @@ const rowsForschung = [
 ];
 */
 
-const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung];
+const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung, ...rowsBerater, ...rowsContractor];
 
 export default function EventTable() {
     const [pick, setPick] = React.useState('50');
@@ -132,6 +151,15 @@ export default function EventTable() {
         setRows(rowsForschung);
       }
       */
+     
+      else if (event.target.value === 40) {
+        setRows(rowsBerater);
+      }
+      
+      else if (event.target.value === 50) {
+        setRows(rowsContractor);
+      }
+      
       else {
         setRows(allArrays);
       }
@@ -153,7 +181,8 @@ export default function EventTable() {
           <MenuItem value={10}>Planung</MenuItem>
           <MenuItem value={20}>Ausführung</MenuItem>
           <MenuItem value={30}>Softwareentwicklung</MenuItem>
-          
+          <MenuItem value={40}>Contracting Berater</MenuItem>
+          <MenuItem value={50}>Energie-Contractor</MenuItem>
         </Select>
       </FormControl>
     </div>
