@@ -93,7 +93,7 @@ const rowsPlanung = [
   //{ id: 999, unternehmen: '99999', land: 'D', plz: '99999', standort: 'Stadt', web: "https://www.tum.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: '-', email: '-'},
 ];
 
-const rowsAusführung = [
+const rowsAusfuhrung = [
   { id: 202, unternehmen: 'List AG', land: 'D', plz: '33649', standort: 'Bielefeld', web: "https://www.list-gruppe.de/gruppe/holding/", sanierung: true, ansprechperson: '-', email: 'info@list-bib.de'},
 ];
 
@@ -111,7 +111,7 @@ const rowsForschung = [
 ];
 */
 
-const allArrays = [...rowsPlanung, ...rowsAusführung, ...rowsSoftwareentwicklung];
+const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung];
 
 export default function EventTable() {
     const [pick, setPick] = React.useState('50');
@@ -122,7 +122,7 @@ export default function EventTable() {
         setRows(rowsPlanung);
       }
       else if (event.target.value === 20) {
-        setRows(rowsAusführung);
+        setRows(rowsAusfuhrung);
       }
       else if (event.target.value === 30) {
         setRows(rowsSoftwareentwicklung);
