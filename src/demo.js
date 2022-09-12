@@ -94,7 +94,7 @@ const rowsPlanung = [
 ];
 
 const rowsAusführung = [
-  { id: 201, unternehmen: 'A', land: 'D', plz: '33649', standort: 'Bielefeld', web: "https://www.list-gruppe.de/gruppe/holding/", sanierung: true, ansprechperson: '-', email: 'info@list-bib.de'},
+  { id: 202, unternehmen: 'List AG', land: 'D', plz: '33649', standort: 'Bielefeld', web: "https://www.list-gruppe.de/gruppe/holding/", sanierung: true, ansprechperson: '-', email: 'info@list-bib.de'},
 ];
 
 const rowsSoftwareentwicklung = [
