@@ -106,12 +106,13 @@ const rowsSoftwareentwicklung = [
 ];
 
 const rowsBerater = [
-  { id: 401, unternehmen: 'Deutsche Energie-Agentur GmbH (dena)', land: 'D', plz: '10115', standort: 'Berlin', web: "https://www.dena.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Andreas Kuhlmann', email: 'info@dena.de'},
+  { id: 401, unternehmen: 'Deutsche Energie-Agentur GmbH', land: 'D', plz: '10115', standort: 'Berlin', web: "https://www.dena.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Andreas Kuhlmann', email: 'info@dena.de'},
   { id: 402, unternehmen: 'eta Energieberatung GmbH', land: 'D', plz: '85276', standort: 'Pfaffenhofen a.d. Ilm', web: "https://eta-energieberatung.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Thomas Friedl', email: 'info@eta-energieberatung.de'},
   { id: 403, unternehmen: 'Berliner Energieagentur GmbH', land: 'D', plz: '10117', standort: 'Berlin', web: "https://www.berliner-e-agentur.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Michael Geißler', email: 'office@berliner-e-agentur.de'},
   { id: 404, unternehmen: 'KEA GmbH', land: 'D', plz: '76133', standort: 'Karlsruhe', web: "https://www.kea-bw.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Rüdiger Lohse', email: 'Ruediger.Lohse@kea-bw.de'},
+  { id: 405, unternehmen: 'BEKS EnergieEffizienz GmbH', land: 'D', plz: '28195', standort: 'Bremen', web: "https://energiekonsens.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Martin Grocholl', email: 'info@energiekonsens.de'},
+  { id: 406, unternehmen: 'CDM Smith Consult GmbH', land: 'D', plz: '44793', standort: 'Bochum', web: "https://www.cdmsmith.com/de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: true, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Dr. Ralf Bufler', email: 'https://www.cdmsmith.com/de/'},
   
-
 ];
 
 const rowsContractor = [
@@ -119,9 +120,11 @@ const rowsContractor = [
   { id: 451, unternehmen: 'ENGIE Deutschland GmbH', land: 'D', plz: '50858', standort: 'Köln', web: "https://www.engie-deutschland.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: true, brandschutz: false, ansprechperson: 'Manfred Schmitz', email: 'info-deutschland@engie.com'},
   { id: 452, unternehmen: 'Caverion Deutschland GmbH', land: 'D', plz: '80992', standort: 'München', web: "https://www.caverion.de/" , zertifizierung: true, lca: true, lcc: true, simulation: false, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: true, brandschutz: false, ansprechperson: 'Manfred Simmet', email: 'info.de@caverion.com'},
   { id: 453, unternehmen: 'Siemens AG', land: 'D', plz: '60487', standort: 'Frankfurt am Main', web: "https://new.siemens.com/de/de/produkte/gebaeudetechnik.html" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'info', email: 'https://new.siemens.com/de/de/produkte/gebaeudetechnik/kontakt.html'},
-  { id: 454, unternehmen: 'SPIE Energy Solutions GmbH', land: 'D', plz: '10179', standort: 'Berlin', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Markus Holzke', email: 'https://spie.de/footer-dt/kontakt'},
+  { id: 454, unternehmen: 'SPIE Energy Solutions GmbH', land: 'D', plz: '10179', standort: 'Berlin', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Thomas Ulrich', email: 'thomas.ullrich@spie.com'},
   { id: 455, unternehmen: 'MVV Energiedienstleistungen GmbH', land: 'D', plz: '68159', standort: 'Mannheim', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Sebastian Ackermann', email: 'sebastian.ackermann@mvv.de'},
-  
+  { id: 456, unternehmen: 'Johnson Controls Systems & Service GmbH', land: 'D', plz: '45143', standort: 'Essen', web: "https://www.johnsoncontrols.com/de_de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'Roland Billeter', email: 'info.de@jci.com'},
+  { id: 457, unternehmen: 'WISAG Energiemanagement GmbH & Co. KG', land: 'D', plz: '90469', standort: 'Nürnberg', web: "https://www.facility.wisag.de/facility/leistungen/consulting-management.html" , zertifizierung: true, lca: true, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'Ekta Tschandhok', email: 'Ekta.Tschandhok@wisag.de'},
+ 
 ];
 
 /*
@@ -177,12 +180,12 @@ export default function EventTable() {
           onChange={handleChange}
           label="Picker"
       >
-          <MenuItem value={50}>Alle</MenuItem>
+          <MenuItem value={0}>Alle</MenuItem>
           <MenuItem value={10}>Planung</MenuItem>
           <MenuItem value={20}>Ausführung</MenuItem>
           <MenuItem value={30}>Softwareentwicklung</MenuItem>
           <MenuItem value={40}>Contracting Berater</MenuItem>
-          <MenuItem value={50}>Energie-Contractor</MenuItem>
+          <MenuItem value={60}>Energie-Contractor</MenuItem>
         </Select>
       </FormControl>
     </div>
