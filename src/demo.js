@@ -112,7 +112,7 @@ const rowsBerater = [
   { id: 404, unternehmen: 'KEA GmbH', land: 'D', plz: '76133', standort: 'Karlsruhe', web: "https://www.kea-bw.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Rüdiger Lohse', email: 'Ruediger.Lohse@kea-bw.de'},
   { id: 405, unternehmen: 'BEKS EnergieEffizienz GmbH', land: 'D', plz: '28195', standort: 'Bremen', web: "https://energiekonsens.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Martin Grocholl', email: 'info@energiekonsens.de'},
   { id: 406, unternehmen: 'CDM Smith Consult GmbH', land: 'D', plz: '44793', standort: 'Bochum', web: "https://www.cdmsmith.com/de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: true, umwelttechnik: true, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Dr. Ralf Bufler', email: 'https://www.cdmsmith.com/de/'},
-  
+  { id: 407, unternehmen: 'Vermögen und Bau Baden-Württemberg', land: 'D', plz: '70173', standort: 'Stuttgart', web: "https://www.kompetenzzentrum-contracting.de/" , zertifizierung: false, lca: false, lcc: false, simulation: false, monitoring: false, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: false, schallschutz: false, akustik: false, tga: false, sanierung: false, fassade: false, brandschutz: false, ansprechperson: 'Konstantin Berg', email: 'Konstantin.Berg@vbv.bwl.de'},
 ];
 
 const rowsContractor = [
@@ -124,7 +124,6 @@ const rowsContractor = [
   { id: 455, unternehmen: 'MVV Energiedienstleistungen GmbH', land: 'D', plz: '68159', standort: 'Mannheim', web: "https://spie.de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: false, ansprechperson: 'Sebastian Ackermann', email: 'sebastian.ackermann@mvv.de'},
   { id: 456, unternehmen: 'Johnson Controls Systems & Service GmbH', land: 'D', plz: '45143', standort: 'Essen', web: "https://www.johnsoncontrols.com/de_de/" , zertifizierung: false, lca: false, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'Roland Billeter', email: 'info.de@jci.com'},
   { id: 457, unternehmen: 'WISAG Energiemanagement GmbH & Co. KG', land: 'D', plz: '90469', standort: 'Nürnberg', web: "https://www.facility.wisag.de/facility/leistungen/consulting-management.html" , zertifizierung: true, lca: true, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'Ekta Tschandhok', email: 'Ekta.Tschandhok@wisag.de'},
- 
 ];
 
 /*
@@ -136,7 +135,7 @@ const rowsForschung = [
 const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung, ...rowsBerater, ...rowsContractor];
 
 export default function EventTable() {
-    const [pick, setPick] = React.useState('50');
+    const [pick, setPick] = React.useState('0');
     const [rows, setRows] = React.useState(allArrays);
     const handleChange = (event) => {
       setPick(event.target.value);
@@ -154,15 +153,12 @@ export default function EventTable() {
         setRows(rowsForschung);
       }
       */
-     
       else if (event.target.value === 40) {
         setRows(rowsBerater);
       }
-      
       else if (event.target.value === 50) {
         setRows(rowsContractor);
       }
-      
       else {
         setRows(allArrays);
       }
