@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar, deDE } from '@mui/x-data-grid';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -126,11 +126,14 @@ const rowsContractor = [
   { id: 457, unternehmen: 'WISAG Energiemanagement GmbH & Co. KG', land: 'D', plz: '90469', standort: 'Nürnberg', web: "https://www.facility.wisag.de/facility/leistungen/consulting-management.html" , zertifizierung: true, lca: true, lcc: false, simulation: true, monitoring: true, energietechnik: true, clima: false, umwelttechnik: false, bauphysik: true, schallschutz: false, akustik: false, tga: true, sanierung: true, fassade: false, brandschutz: true, ansprechperson: 'Ekta Tschandhok', email: 'Ekta.Tschandhok@wisag.de'},
 ];
 
+
 /*
 const rowsForschung = [
   { id: 401, unternehmen: 'C', land: 'D', plz: '60326', standort: 'Frankfurt', web: "https://www.dreso.com" , zertifizierung: true, energietechnik: true, lca: true, ansprechperson: 'Natascha Altensen', email: 'natascha.altensen@dreso.com'},
 ];
 */
+
+
 
 const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung, ...rowsBerater, ...rowsContractor];
 
@@ -163,9 +166,11 @@ export default function EventTable() {
         setRows(allArrays);
       }
     }
+    
   return (
+    
     <div style={{ height: "90vh", width: '100%', fontSize: "22px",  margin: "300", fontFamily: 'TTNormsPro', fontWeight: "bold"}}>
-      &nbsp;Energie- und Nachhaltigkeitsberatungsunternehmen <br></br>     
+      &nbsp;Fachplaner Energie und Nachhaltigkeit<br></br>     
       <div>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="demo-simple-select-standard-label">Auswahl</InputLabel>
@@ -175,7 +180,7 @@ export default function EventTable() {
           value={pick}
           onChange={handleChange}
           label="Picker"
-      >
+        >
           <MenuItem value={0}>Alle</MenuItem>
           <MenuItem value={10}>Planung</MenuItem>
           <MenuItem value={20}>Ausführung</MenuItem>
@@ -185,14 +190,48 @@ export default function EventTable() {
         </Select>
       </FormControl>
     </div>
+  
       <DataGrid 
+      headerName={"Employee List"}
+      localeText={deDE.components.MuiDataGrid.defaultProps.localeText}
+      
       rows={rows} 
       columns={columns} 
       autoPageSize
       density='compact' // 	'comfortable' | 'compact' | 'standard'
       //pageSize={18}
       //rowsPerPageOptions={[18]}
-      components={{Toolbar: GridToolbar,}}
+      components={{Toolbar: GridToolbar}}
+          
+      componentsProps={{ 
+        toolbar: { 
+        csvOptions: { fileName: 'Fachplaner_BBIV', allColumns: true, delimiter: ';', utf8WithBom: true, },
+        printOptions: { disableToolbarButton: true, fileName: 'Fachplaner_BBIV', allColumns: true, hideToolbar: true, hideFooter: true }
+         
+      } }}
+      sx={{
+        '.MuiDataGrid-columnSeparator': {
+          display: 'none',
+        },
+        '&.MuiDataGrid-root': {
+          border: 'none',
+        },
+        '@media print': {
+          '.MuiDataGrid-main': {
+            width: 'fit-content',
+            fontSize: '10px',
+            height: 'fit-content',
+            overflow: 'visible',
+            autoPageSize: true,
+            headerName: 'Adviser',
+            fileName: 'Fachplaner_BBIV',
+            allColumns: true,
+          },
+          marginBottom: 100,
+          
+        },
+      }}
+    
       />
     </div>
   );
