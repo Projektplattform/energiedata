@@ -11,7 +11,7 @@ const columns = [
   { field: 'unternehmen', headerName: 'Unternehmen', renderCell: (params) => <a href={params.row.web}>{params.row.unternehmen}</a>, width: 260, },
   { field: 'land', headerName: 'Land', width: 50 },
   { field: 'plz', headerName: 'PLZ', width: 80 },
-  { field: 'standort', headerName: 'Standort', width: 100 },
+  { field: 'standort', headerName: 'Standort', width: 80 },
   //{ field: 'web', headerName: 'Web', renderCell: (params) => <a href="{params.row.web}">{params.row.web}</a>, width: 170, },
   //{ field: 'web', headerName: 'Web', renderCell: (params) => <a href="{params.row.web}">Link</a>, width: 55, },
   { field: 'zertifizierung', headerName: 'Zertifizierung', type: 'boolean', width: 100 },
@@ -133,11 +133,10 @@ const rowsForschung = [
 ];
 */
 
-
-
 const allArrays = [...rowsPlanung, ...rowsAusfuhrung, ...rowsSoftwareentwicklung, ...rowsBerater, ...rowsContractor];
 
 export default function EventTable() {
+    const [pageSize, setPageSize] = React.useState(13);
     const [pick, setPick] = React.useState('0');
     const [rows, setRows] = React.useState(allArrays);
     const handleChange = (event) => {
@@ -166,10 +165,9 @@ export default function EventTable() {
         setRows(allArrays);
       }
     }
-    
   return (
     
-    <div style={{ height: "90vh", width: '100%', fontSize: "22px",  margin: "300", fontFamily: 'TTNormsPro', fontWeight: "bold"}}>
+    <div style={{ height: "85vh", width: '100%', fontSize: "22px",  margin: "300", fontFamily: 'TTNormsPro', fontWeight: "bold"}}>
       &nbsp;Fachplaner Energie und Nachhaltigkeit<br></br>     
       <div>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
@@ -190,25 +188,32 @@ export default function EventTable() {
         </Select>
       </FormControl>
     </div>
-  
       <DataGrid 
-      headerName={"Employee List"}
       localeText={deDE.components.MuiDataGrid.defaultProps.localeText}
-      
       rows={rows} 
       columns={columns} 
-      autoPageSize
+      
       density='compact' // 	'comfortable' | 'compact' | 'standard'
       //pageSize={18}
       //rowsPerPageOptions={[18]}
       components={{Toolbar: GridToolbar}}
-          
+      
+      pageSize={pageSize}
+      onPageSizeChange={(autoPageSize) => setPageSize(autoPageSize)}
+      
+      /*
+      pageSize={pageSize}
+      onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+      rowsPerPageOptions={[5, 10, 15, 100]}
+      pagination
+*/
       componentsProps={{ 
         toolbar: { 
         csvOptions: { fileName: 'Fachplaner_BBIV', allColumns: true, delimiter: ';', utf8WithBom: true, },
-        printOptions: { disableToolbarButton: true, fileName: 'Fachplaner_BBIV', allColumns: true, hideToolbar: true, hideFooter: true }
+        printOptions: { fileName: 'Fachplaner_BBIV', allColumns: true, hideToolbar: true, hideFooter: true } //disableToolbarButton: true
          
       } }}
+      
       sx={{
         '.MuiDataGrid-columnSeparator': {
           display: 'none',
@@ -217,20 +222,22 @@ export default function EventTable() {
           border: 'none',
         },
         '@media print': {
+          '.PrintSection': {
+            margin: "50px !important",
+          }
+          /*
           '.MuiDataGrid-main': {
-            width: 'fit-content',
+            width:  '3500px',
             fontSize: '10px',
             height: 'fit-content',
-            overflow: 'visible',
-            autoPageSize: true,
-            headerName: 'Adviser',
-            fileName: 'Fachplaner_BBIV',
-            allColumns: true,
+            overflow: "visible !important"
+                      
           },
-          marginBottom: 100,
-          
+          marginBottom: "10px",
+          */
         },
       }}
+
     
       />
     </div>
